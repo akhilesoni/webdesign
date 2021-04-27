@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="plate"></div>
+        <div class="cup">
+            <div class="depth">
+                <div class="tea"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vapour">
+        <div class="i v11"></div>
+        <div class="i v8"></div>
+        <div class="i v12"></div>
+        <div class="i v5"></div>
+        <div class="i v3"></div>
+        <div class="i v9"></div>
+        <div class="i v13"></div>
+        <div class="i v2"></div>
+        <div class="i v14"></div>
+        <div class="i v4"></div>
+        <div class="i v10"></div>
+        <div class="i v7"></div>
+        <div class="i v5"></div>
+
+    </div>
+    <script>
+        anime({
+            targets:'.i',
+            translateY:-140,
+            width:8,
+            opacity:[1,1,1,0],
+            duration:2000,
+            autoplay:true,
+            loop:true,
+            delay:anime.stagger(500),
+            easing:'linear',
+        })
+    </script>
+</body>
+</html>
